@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <h1>Gerador de senha</h1>
+    <div class="slider">
+        <div class="value-display">
+            Número de caracteres: <span id="charValue">20</span>
+        </div>
+        <br>
+        <input type="range" id="charRange" min="8" max="32" step="1" oninput="updateValue(this.value)">
+        <div id="caixa1" class="caixa">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Maiúsculas</label>
+        </div>
+        <div id="caixa2" class="caixa">
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Números</label>
+        </div>
+        <div id="caixa3" class="caixa">
+            <input type="checkbox" id="simbols">
+            <label for="lowercase">Símbolos</label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="generator-buttom">
+        <button onclick="gerarSenha()">Gerar Senha</button>
+    </div>
+    <br>
+    <p id="mensagem">Sua senha foi gerada: </p>
+    <div id="caixa-de-resultado">
+        <p id="resultado"></p>
+        <span id="copy"><button id="copy-buttom" onclick="copiar()"></button></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

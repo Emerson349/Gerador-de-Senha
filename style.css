@@ -1,0 +1,169 @@
+body {
+    background-color: #D0D9D7;
+}
+
+h1 {
+    font-size: 2.1em;
+    text-align: center;
+    padding: 30px;
+    color: #403434;
+}
+
+.slider {
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.389);
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.value-display {
+    font-size: 1.25em;
+    color: #372d2d;
+}
+
+input[type="range"] {
+    width: 400px;
+    height: 12px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #BDBBB7;
+    border: 0px solid white;
+    border-radius: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3C2E2B;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.caixa {
+    position: absolute;
+    right: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.caixa input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #BDBBB7;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.caixa input[type="checkbox"]:hover {
+    background-color: #372d2d;
+}
+
+.caixa input[type="checkbox"]:checked {
+    background-color: #372d2d;
+}
+
+.caixa input[type="checkbox"]:checked::after {
+    content: "✔";
+    display: block;
+    color: #BDBBB7;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+div#generator-buttom {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 150px;
+}
+
+div#generator-buttom > button {
+    border-color: #372d2d;
+    border-radius: 5px;
+}
+
+div#generator-buttom > button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #372d2d;
+}
+
+.caixa label {
+    color: #372d2d;
+}
+
+#caixa1 {
+    top: 15px;
+    right: 65px;
+}
+
+#caixa2 {
+    top: 45px;
+    right: 79px;
+}
+
+#caixa3 {
+    top: 75px;
+    right:77px;
+}
+
+div#caixa-de-resultado {
+    background-color: white;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 450px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.378);
+    padding: 8px;
+    border-radius: 7px;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+div#caixa-de-resultado p {
+    color: #372d2d;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span#copy{
+    cursor: pointer;
+    background-color: white;
+}
+
+p#mensagem {
+    display: none;
+    text-align: center;
+    color: #372d2d;
+    font-size: 1.2em;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+button#copy-buttom {
+    background-color: white;
+    background-image: url(imagens/copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
